@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background"
+			],
+			[
+				"sma",
+				"smalled"
+			],
+			[
+				"ca",
+				"caroufredsel_wrapper"
+			],
+			[
+				"modal",
+				"modal-body"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"nav",
+				"nav-pills"
+			],
+			[
+				"li",
+				"liquidaciones"
+			],
+			[
+				"in",
+				"induccion"
+			],
+			[
+				"push",
+				"push-nav"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"input",
+				"input-group"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"type",
+				"type-content"
+			],
+			[
+				"inside",
+				"insider-nav"
+			],
+			[
 				"f",
 				"Footer"
 			],
@@ -16,10 +88,6 @@
 				"get_template_part"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"border",
 				"border-left"
 			],
@@ -30,10 +98,6 @@
 			[
 				"form",
 				"form-control"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"padding",
@@ -58,10 +122,6 @@
 			[
 				"fig",
 				"figcaption"
-			],
-			[
-				"in",
-				"institution"
 			],
 			[
 				"get_",
@@ -98,10 +158,6 @@
 			[
 				"searc",
 				"search-area"
-			],
-			[
-				"bac",
-				"background-repeat"
 			],
 			[
 				"col",
@@ -156,10 +212,6 @@
 				"contact-cta"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"c",
 				"c34614"
 			],
@@ -170,10 +222,6 @@
 			[
 				"goa",
 				"goabout"
-			],
-			[
-				"background",
-				"background-color"
 			],
 			[
 				"mn",
@@ -210,10 +258,6 @@
 			[
 				"blue",
 				"blue-girl"
-			],
-			[
-				"nav",
-				"navbar-toggle"
 			],
 			[
 				"bord",
@@ -340,10 +384,6 @@
 				"border-top"
 			],
 			[
-				"ma",
-				"margin"
-			],
-			[
 				"wi",
 				"width"
 			],
@@ -364,42 +404,10 @@
 	"buffers":
 	[
 		{
-			"file": "intragunsa/footer-inside.php",
+			"file": "intragunsa/page-serviciopersonas.php",
 			"settings":
 			{
-				"buffer_size": 1985,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "intragunsa/single.php",
-			"settings":
-			{
-				"buffer_size": 1105,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "intragunsa/sidebarnews.php",
-			"settings":
-			{
-				"buffer_size": 1410,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "intragunsa/category-noticias.php",
-			"settings":
-			{
-				"buffer_size": 12175,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "intragunsa/index.php",
-			"settings":
-			{
-				"buffer_size": 2295,
+				"buffer_size": 34205,
 				"line_ending": "Unix"
 			}
 		},
@@ -407,15 +415,15 @@
 			"file": "intragunsa/header.php",
 			"settings":
 			{
-				"buffer_size": 3381,
+				"buffer_size": 6320,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "intragunsa/page-serviciopersonas.php",
+			"file": "intragunsa/archive-documentos.php",
 			"settings":
 			{
-				"buffer_size": 37282,
+				"buffer_size": 9142,
 				"line_ending": "Unix"
 			}
 		},
@@ -423,7 +431,23 @@
 			"file": "intragunsa/style.css",
 			"settings":
 			{
-				"buffer_size": 25316,
+				"buffer_size": 43902,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "intragunsa/header-insidernews.php",
+			"settings":
+			{
+				"buffer_size": 6979,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "intragunsa/header-insider.php",
+			"settings":
+			{
+				"buffer_size": 5479,
 				"line_ending": "Unix"
 			}
 		},
@@ -431,23 +455,15 @@
 			"file": "intragunsa/functions.php",
 			"settings":
 			{
-				"buffer_size": 8419,
+				"buffer_size": 8459,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "intragunsa/js/core.js",
+			"file": "intragunsa/index.php",
 			"settings":
 			{
-				"buffer_size": 56837,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "intragunsa/footer.php",
-			"settings":
-			{
-				"buffer_size": 403,
+				"buffer_size": 2271,
 				"line_ending": "Unix"
 			}
 		}
@@ -476,16 +492,26 @@
 	},
 	"file_history":
 	[
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/page-quienessomos.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/page-serviciopersonas.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/index.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/category-noticias.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/header-insidernews.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/header-insider.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/header.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/page.php",
-		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/search.php",
 		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/footer.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/index.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/page-quienessomos.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/archive-galeria.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/header-insidernews.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/header.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/single.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/sidebargaleria.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/single-sucursal.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/single-galeria.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/js/core.js",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/category-noticias.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/sidebarnews.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/search.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/page-directorio.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/archive-documentos.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/header-insider.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/page-serviciopersonas.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/footer-inside.php",
+		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/page.php",
 		"/Users/FrontUpmedia/Github/intranet_agunsa/intragunsa/index__.php",
 		"/Users/FrontUpmedia/Github/dri/dri/page.php",
 		"/Users/FrontUpmedia/Github/dri/dri/index.php",
@@ -593,17 +619,7 @@
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_navidenas.php",
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_5.php",
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_4.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_3.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_2.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_1.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_2.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_1.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_5.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_4.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_3.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_51.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_todos.php",
-		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_postres.php"
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_3.php"
 	],
 	"find":
 	{
@@ -627,6 +643,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"listbox",
+			"active right",
 			"<?php echo get_bloginfo('template_directory')?>/images/0.png",
 			"<?php echo get_bloginfo('template_directory')?>/images/0.png\"",
 			"<?php echo get_bloginfo('template_directory')?>/images/0.png\" ",
@@ -752,9 +770,7 @@
 			"slides-container",
 			"backslides",
 			".contentLeft",
-			".donar",
-			"donarTwee",
-			"social"
+			".donar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -775,166 +791,86 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "intragunsa/footer-inside.php",
+					"file": "intragunsa/page-serviciopersonas.php",
 					"settings":
 					{
-						"buffer_size": 1985,
+						"buffer_size": 34205,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								937,
-								937
+								27376,
+								27376
+							],
+							[
+								29110,
+								29110
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false,
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 9059.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "intragunsa/single.php",
+					"file": "intragunsa/header.php",
 					"settings":
 					{
-						"buffer_size": 1105,
+						"buffer_size": 6320,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								569,
-								569
+								5415,
+								5415
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2279.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "intragunsa/sidebarnews.php",
+					"file": "intragunsa/archive-documentos.php",
 					"settings":
 					{
-						"buffer_size": 1410,
+						"buffer_size": 9142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								977,
-								977
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "intragunsa/category-noticias.php",
-					"settings":
-					{
-						"buffer_size": 12175,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12024,
-								12024
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3069.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "intragunsa/index.php",
-					"settings":
-					{
-						"buffer_size": 2295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								633,
-								390
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "intragunsa/header.php",
-					"settings":
-					{
-						"buffer_size": 3381,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1904,
-								1927
+								2470,
+								2470
 							]
 						],
 						"settings":
@@ -945,36 +881,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 549.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "intragunsa/page-serviciopersonas.php",
-					"settings":
-					{
-						"buffer_size": 37282,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20960,
-								20960
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 833.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -986,19 +893,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 7,
+					"buffer": 3,
 					"file": "intragunsa/style.css",
 					"settings":
 					{
-						"buffer_size": 25316,
+						"buffer_size": 43902,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16014,
-								16014
+								14848,
+								14848
 							]
 						],
 						"settings":
@@ -1010,25 +917,83 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6146.0,
+						"translation.y": 4277.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "intragunsa/functions.php",
+					"buffer": 4,
+					"file": "intragunsa/header-insidernews.php",
 					"settings":
 					{
-						"buffer_size": 8419,
+						"buffer_size": 6979,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								323,
-								323
+								6449,
+								6449
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2354.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "intragunsa/header-insider.php",
+					"settings":
+					{
+						"buffer_size": 5479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5479,
+								5479
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1709.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "intragunsa/functions.php",
+					"settings":
+					{
+						"buffer_size": 8459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								974,
+								974
 							]
 						],
 						"settings":
@@ -1044,56 +1009,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "intragunsa/js/core.js",
+					"buffer": 7,
+					"file": "intragunsa/index.php",
 					"settings":
 					{
-						"buffer_size": 56837,
+						"buffer_size": 2271,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19373,
-								19373
+								1348,
+								1348
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7313.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "intragunsa/footer.php",
-					"settings":
-					{
-						"buffer_size": 403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								366,
-								366
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"word_wrap": true
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

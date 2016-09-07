@@ -5,6 +5,7 @@ add_image_size('headingpage', 1200, 294, true );
 add_image_size('pagesucursal', 320, 240, true );
 add_image_size('highnews', 490, 315, true );
 add_image_size('normalnews', 320, 240, true);
+add_image_size('modal', 570, 440,true);
 //add_image_size('head', 1920, 800, true );
 }
 /* 
@@ -103,6 +104,26 @@ function sucursal_register() {
     flush_rewrite_rules();
 }
 
+
+
+add_action('init', 'anticipos_register');
+function anticipos_register() {
+    $args = array(
+        'label' => 'Anticipos',
+        'singular_label' => 'Anticipo',
+        'public' => true,
+		'menu_position' => 5, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+		'has_archive' => true,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'anticipos'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'custom-fields')
+    );
+    register_post_type('anticipos', $args);
+    flush_rewrite_rules();
+}
+
 ?>
 
 <?php 
@@ -149,15 +170,15 @@ function validaLetras($texto){
 
 
 
-add_action('wp_ajax_enviarPregunta', 'enviarPregunta');
-add_action('wp_ajax_nopriv_enviarPregunta', 'enviarPregunta');
-function enviarPregunta(){
+add_action('wp_ajax_enviaSolicitud', 'enviaSolicitud');
+add_action('wp_ajax_nopriv_enviaSolicitud', 'enviaSolicitud');
+function enviaSolicitud(){
 	
 	$nombre = $_GET['nombre'];
-	$edad = $_GET['edad'];
+	$rut = $_GET['rut'];
+	$monto = $_GET['monto'];
 	$email = $_GET['email'];
-	$ciudad = $_GET['ciudad'];
-	$pregunta = $_GET['pregunta'];
+	
 	
 	$error = 0;
 	if(validaLetras($nombre) != $nombre){
@@ -169,15 +190,15 @@ function enviarPregunta(){
 	} 
 	
 	if($error == 0){
-		$nuevaPregunta = array(
-		  'post_title'    => substr($pregunta , 0 , 100 ),
-		  'post_content'  => 'El doctor debe ingresar la respuesta acá',
-		  'post_status'   => 'draft',
-		  'post_type'	  => 'alo-doctor',
-		  'post_excerpt'  => $pregunta,
+		$nuevaSolicitud = array(
+		  'post_title'    => $rut,
+		  'post_content'  => 'solicitud de anticipo de: '.$nombre,
+		  'post_status'   => 'publish',
+		  'post_type'	  => 'anticipos',
+		  'post_excerpt'  => $monto,
 		);
 		
-		$askId = wp_insert_post( $nuevaPregunta , $cueck );
+		$askId = wp_insert_post( $nuevaSolicitud , $cueck );
 		
 		if($cueck){
 			echo '3';
@@ -186,43 +207,14 @@ function enviarPregunta(){
 			echo '4';
 			update_post_meta($askId , 'nombre' , $nombre);
 			update_post_meta($askId , 'email' , $email);
-			update_post_meta($askId , 'edad' , $edad);
-			update_post_meta($askId , 'ciudad' , $ciudad);
+			update_post_meta($askId , 'monto' , $monto);
+			update_post_meta($askId , 'rut' , $rut);
 		}
 	}else{
 		echo '5';
 	}
 	die;
 }
-
-add_action('wp_ajax_cargarPregunta', 'cargarPregunta');
-add_action('wp_ajax_nopriv_cargarPregunta', 'cargarPregunta');
-function cargarPregunta(){
-	
-	$id = $_GET['id'];
-	if($id){
-		$p = get_post($id);
-		//var_dump($p);
-		$nombre = get_post_meta($id , 'nombre', true);
-		$email = get_post_meta($id , 'email', true);
-		$edad = get_post_meta($id , 'edad', true);
-		$ciudad = get_post_meta($id , 'ciudad', true);
-		
-		echo '"'.$p->post_title.'";"'.$p->post_content.'";"'.$nombre.'";"'.$edad;
-		
-	}
-	
-	
-	die;
-}
-
-function limit_preguntas($query) {
-	if( $query->is_post_type_archive('alo-doctor')):
-		$query->set('posts_per_page', 9);
-		return;
-	endif;
-}
-add_action('pre_get_posts','limit_preguntas');
 
 ?>
 <?php 

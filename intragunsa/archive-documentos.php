@@ -5,7 +5,7 @@
         <div class="row">
 
             <div class="col-md-12 col-xs-12">
-                <div class="jumbotron col-md-6 col-sm-6 col-xs-12">
+                <div class="jumbotron col-md-6 col-sm-6 col-xs-12 col-esp">
                      <?php $postt = get_post(11); ?>
                     <h2><?php echo $postt->post_title; ?></h2>
                     <h3><?php echo $postt->post_excerpt; ?></h3>
@@ -68,7 +68,7 @@
     </div>
 
     <!-- Area Contenidos descargables -->
-    <div class="col-md-8 file-directory">
+    <div class="col-md-9 file-directory">
 
       <!-- Archivo -->
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">

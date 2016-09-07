@@ -95,6 +95,7 @@ jQuery(document).ready(function(){
           
 });
 </script>
+
 </head>
 
 <body <?php body_class('bmh--state-navigation')?>>
@@ -130,19 +131,18 @@ jQuery(document).ready(function(){
               <div class="navbar-collapse collapse">
                   <!-- Búsqueda -->
                   <div class="searchh">
-                      <form method="get" id="searchform" action="<?php bloginfo('url')?>">
-                        <label class="hidden" for="s"></label>
-                        <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
-                        <input type="text" placeholder="¿Que Buscas?" value="" name="s" id="s">
-                      </form>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="fa fa-search"></span></button>
                   </div>
-                  <!-- Fin Búsqueda -->
+
+                 <!-- Fin Búsqueda -->
 
                   <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'nav navbar-nav navbar-right' , 'theme_location' => 'primary' ) ); ?>
                   
-              </div><!--/.nav-collapse -->
+            </div><!--/.nav-collapse -->
 
-          </div>    
+
+          </div>  
+            
         </div>
     </div>
 </nav>
@@ -157,5 +157,38 @@ jQuery(document).ready(function(){
 <!-- Fin Push Navigation -->
 
 <nav class="push-nav">
-  <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'list-unstyled main-menu' , 'theme_location' => 'primary' ) ); ?>
+  <?php /* ?>
+    <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'list-unstyled main-menu' , 'theme_location' => 'primary' ) ); ?>
+  <?php */?>
+
+  <ul id="menu-menu-principal-1" class="list-unstyled main-menu">
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 induccion"><a href="/">Inducción</a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17 liquidaciones"><a href="/">Liquidaciones de Sueldo</a></li>
+    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35 directorio"><a href="/">Directorio</a></li>
+  </ul>
+
 </nav>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" id="bigSearch" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content"> 
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          x
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <form method="get" id="searchform" action="<?php bloginfo('url')?>">
+          <label class="hidden" for="s"></label>
+          <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
+          <input type="text" placeholder="¿Qué Buscas?" value="" name="s" id="s">
+          <button><a href="">Buscar Personas</a></button>
+          <button><a href="">Buscar Contenido</a></button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-<div class="push-control">
+<div class="push-control animated bounce">
 	<a id="footer-expander" class="nav-expander fixed">
 		<span class="opened">
 			<img src="<?php echo get_bloginfo('template_directory');?>/images/click_interest.png" alt="">

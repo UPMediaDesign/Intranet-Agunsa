@@ -1,18 +1,19 @@
-<?php get_header()?>
-<?php $var = get_queried_object();?>
+<?php get_header('insider'); ?>
 
-<?php //get_template_part('socialbar')?>
+<div class="heading-page" style="background-image:url(<?php echo get_bloginfo('template_directory')?>/images/search_result_.jpg)">
+    <div class="container gradient">
+        <div class="row">
 
-<section id="slider" class="heading-page" style="background-image:url(<?php echo get_bloginfo('template_directory')?>/images/search.jpg)">
-        <div class="container-fluid gradient">
-            <div class="row">
-                <div class="jumbotron col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-                    <h1>Usted buscó: <?php echo $_GET['s'] ?></h1>
+            <div class="col-md-12 col-xs-12">
+                <div class="jumbotron col-md-6 col-sm-6 col-xs-12">
+                    <h2>Usted buscó: <?php echo $_GET['s'] ?></h2>
                     <p>Resultados de búsqueda</p>
                 </div>
             </div>
+
         </div>
-</section>
+    </div>
+</div>
 
 <div class="clear separator"></div>
 
@@ -48,7 +49,7 @@
                         <?php if($doc->post_type == 'publicaciones'){?>
 
                         <?php $pub = get_field('embed_publicacion', $doc->ID);?>
-                        <article>
+                        <article class="search-result">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h4><a href="<?php echo $pub?>"><?php echo $doc->post_title?></a></h4>
@@ -60,7 +61,7 @@
                         </article>
                         
                         <?php }else{?>
-                         <article>
+                         <article class="search-result">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h4><a href="<?php echo get_permalink($doc->ID)?>"><?php echo $doc->post_title?></a></h4>
@@ -84,9 +85,7 @@
 		</div>
 	</div>
 </section>
+
 <div class="clear separator"></div>
 
-
-
-
-<?php get_footer();?>
+<?php get_footer('inside');?>

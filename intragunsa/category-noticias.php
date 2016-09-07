@@ -8,7 +8,6 @@
                 <div class="jumbotron col-md-8 col-sm-8 col-xs-12">
                      <?php $postt = get_post(9); ?>
                     <h2><?php echo $postt->post_title; ?></h2>
-                    <h3><?php echo $postt->post_excerpt; ?></h3>
                 </div>
             </div>
 
@@ -72,6 +71,24 @@
 </section>
 <?php */ ?>
 
+
+<section class="principal-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-esp">
+                <div class="col-md-6 col-sm-6 col-xs-12 ">
+                    <img src="<?php echo get_bloginfo('template_directory');?>/images/big-news.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 ">
+                    <h2>AGUNSA expande su infraestructura para sus diversos servicios de almacenaje</h2>
+                    <p>Curabitur dignissim lectus nibh, eget auctor magna faucibus nec. Nunc aliquam eu ex in scelerisque. Curabitur eleifend interdum lectus, eget tempor nunc vestibulum in. Aliquam libero elit, ornare sit amet dolor nec, porttitor cursus metus. </p>
+                    <a href="http://intranetagunsa.upmedia.cl/2016/08/10/nueva-intranet-corporativa-agunsa/" class="cta">Ver noticia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Search Sucursal -->
 <section class="search-area news clr-bg06">
     <div class="container">
@@ -110,24 +127,6 @@
         </div>
     </div>
 </section>
-
-<section class="principal-news">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-6 col-sm-6 col-xs-12 col-esp">
-                    <img src="<?php echo get_bloginfo('template_directory');?>/images/big-news.jpg" alt="" class="img-responsive">
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h2>AGUNSA expande su infraestructura para sus diversos servicios de almacenaje</h2>
-                    <p>Comenzaron en abril pasado los trabajos de ampliación del Terminal de Contenedores de AGUNSA</p>
-                    <a href="http://intranetagunsa.upmedia.cl/2016/08/10/nueva-intranet-corporativa-agunsa/" class="cta">Ver noticia</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 <section class="secondary-news">
     <div class="container">

@@ -14,7 +14,7 @@ Template Name: Servicio Personas
         <div class="row">
 
             <div class="col-md-12 col-xs-12">
-            	<div class="jumbotron col-md-6 col-sm-6 col-xs-12">
+            	<div class="jumbotron col-md-6 col-sm-6 col-xs-12 col-esp">
 	                <h2><?php echo $post->post_title; ?></h2>
 	                <h3><?php echo $post->post_excerpt; ?></h3>
 	            </div>
@@ -391,12 +391,120 @@ Template Name: Servicio Personas
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<h2>Anticipos</h2>
 				<p>Curabitur quis viverra nisi. Pellentesque mauris quam, varius quis iaculis at, feugiat ut lacus. Fusce vel nibh elementum, porta neque vel, efficitur nunc. Mauris et nulla at quam tempor condimentum. </p>
-				<a href="" class="cta">Ver Formulario <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
+				<a href="#" data-toggle="modal" data-target="#modal-anticipos" class="cta">Ver Formulario <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
 			</div>
 
         </div>
 	</div>
 </section>
+
+
+<div class="modal" id="modal-anticipos" tabindex="-1" role="dialog" aria-labelledby="modalAnticipos">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalAnticipos">Solicitud de Anticipo</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Ingresa los datos a continuación para realizar tu solicitud de anticipo</h3>
+        
+        
+        <div class="alert alert-success hidden" role="alert"><span class="fa fa-check-circle fa-fw"></span> Su solicitud fue recibida exitosamente, le confirmaremos vía correo la aplicación del anticipo</div>
+           	
+       <div class="alert alert-danger hidden" role="alert"><span class="fa fa-explanation-circle fa-fw"></span> Su pregunta no fue recibida. Intenta nuevamente</div>
+       <div class="alert alert-danger problema hidden" role="alert"><span class="fa fa-explanation-circle fa-fw"></span> Debes completar todos los datos obligatorios</div>
+       <div class="alert alert-danger.validacion hidden" role="alert"><span class="fa fa-explanation-circle fa-fw"></span> Hubo un error de validación en los datos, verifica que no existan simbolos extraños en los campos</div>
+        
+        <form id="enviaSolicitud">
+        	
+        	<div class="form-group">
+        		<label for="rut">Ingrese su Nombre</label>
+        		<input type="text" name="nombre" class="form-control" id="nombre">
+        	</div>
+        	
+        	<div class="form-group">
+        		<label for="rut">Ingrese su rut</label>
+        		<input type="text" name="rut" class="form-control" id="rut">
+        	</div>
+        	
+        	<div class="form-group">
+        		<label for="rut">Ingrese monto a solicitar</label>
+        		<input type="text" name="monto" class="form-control" id="monto">
+        	</div>
+        	
+        	<div class="form-group">
+        		<label for="rut">Ingrese Email</label>
+        		<input type="email" name="email" class="form-control" id="email">
+        	</div>
+        	
+        	<div class="form-group">
+        		<input type="submit" value="Enviar" class="btn btn-success">
+        	</div>
+        	
+        </form>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+$("#enviaSolicitud").submit(function(event) {
+	event.preventDefault();
+	enviaSolicitud();
+});
+
+
+function enviaSolicitud() {
+	
+	nombre	= $('#nombre').val();
+	rut		= $('#rut').val();
+	monto	= $('#monto').val();
+	email	= $('#email').val();
+	
+	console.log('comienza el envío'+nombre+rut+monto+email);
+	
+	$.ajax({
+		type: 'GET',
+		url:"<?php echo get_bloginfo('url')?>/wp-admin/admin-ajax.php",
+		dataType:"html",
+		data:({ action : 'enviaSolicitud' , nombre : nombre , rut : rut , monto : monto , email : email }),
+		success: function(data){
+			
+			
+			console.log('ya se envió y mandó respuesta');
+
+			if(data == 4){
+				$('form').trigger('reset');
+				console.log('pregunta recibida correctamente')	;
+				$('.alert-success').removeClass('hidden')
+
+			}else if(data == 3){
+				console.log('snap! no se pudo enviar tu pregunta')	;
+				$('.alert-danger.problema').removeClass('hidden')
+			}else if(data == 5){
+				$('.alert-danger.validacion').removeClass('hidden')
+			}else{
+				console.log(data)
+			}
+		}, 
+		error : function(data){
+			console.log('snap! no se pudo enviar tu pregunta')
+			return false;
+		}	
+	});
+	
+	
+}
+	
+	
+</script>
+
 
 <!-- Beneficios Sociales -->
 <section class="social-benefit ">
@@ -408,51 +516,14 @@ Template Name: Servicio Personas
 
 			     <!-- Nav tabs -->
     			<ul class="nav nav-tabs" role="tablist">
-    			    <li role="presentation" class="active col-md-3 col-sm-3 col-esp"><a href="#afp" aria-controls="afp" role="tab" data-toggle="tab">AFP</a></li>
-    			    <li role="presentation" class="col-md-3 col-sm-3 col-esp"><a href="#isapres" aria-controls="isapres" role="tab" data-toggle="tab">Isapres</a></li>
-    			    <li role="presentation" class="col-md-3 col-sm-3 col-esp"><a href="#mutual" aria-controls="mutual" role="tab" data-toggle="tab">Mutual</a></li>
-    			    <li role="presentation" class="col-md-3 col-sm-3 col-esp"><a href="#ccaf" aria-controls="ccaf" role="tab" data-toggle="tab">CCAF</a></li>
+    			    <li role="presentation" class="col-md-6 col-sm-6 col-xs-6 col-esp active"><a href="#mutual" aria-controls="mutual" role="tab" data-toggle="tab">Mutual</a></li>
+    			    <li role="presentation" class="col-md-6 col-sm-6 col-xs-6 col-esp"><a href="#ccaf" aria-controls="ccaf" role="tab" data-toggle="tab">CCAF</a></li>
     			</ul>
 
     			  <!-- Tab panes -->
     			<div class="tab-content">
-    			    <div role="tabpanel" class="tab-pane active row" id="afp">
 
-                        <div class="col-md-6 require">
-                            <span class="hit-number">1</span>
-                            <p>Praesent non augue eget mauris posuere consectetur nec et lorem. Fusce non porttitor sapien, et lobortis diam. Ut vel vehicula enim, eu tempus ligula. Duis laoreet id diam non molestie. Aliquam quis congue nulla.</p>
-                        </div>
-                        <div class="col-md-6 require">
-                            <span class="hit-number">2</span>
-                            <p>Nulla mattis nisi ac risus vestibulum, lobortis tincidunt magna semper. Morbi augue eros, viverra a finibus sagittis, viverra sit amet leo. Nunc ut lorem eu magna imperdiet sagittis.</p>
-                        </div>
-                        <div class="col-md-6 require">
-                            <span class="hit-number">3</span>
-                            <p>Ut porttitor, dui quis aliquam placerat, lacus diam viverra odio, et rutrum odio elit id lectus. Vivamus volutpat id dui a dictum. Ut maximus non enim ac luctus. </p>
-                        </div>
-                        <div class="col-md-6 require">
-                            <span class="hit-number">4</span>
-                            <p>Dignissim nibh a, dictum nulla. Nulla leo arcu, lacinia tempor odio ut, tempus rhoncus tortor. Aenean ut ligula imperdiet.</p>
-                        </div>    
-                    </div>
-
-    			    <div role="tabpanel" class="tab-pane row" id="isapres">
-                        <div class="col-md-6 require">
-                            <span class="hit-number">1</span>
-                            <p>Praesent non augue eget mauris posuere consectetur nec et lorem. Fusce non porttitor sapien, et lobortis diam. Ut vel vehicula enim, eu tempus ligula. Duis laoreet id diam non molestie. Aliquam quis congue nulla.</p>
-                        </div>
-                        <div class="col-md-6 require">
-                            <span class="hit-number">2</span>
-                            <p>Nulla mattis nisi ac risus vestibulum, lobortis tincidunt magna semper. Morbi augue eros, viverra a finibus sagittis, viverra sit amet leo. Nunc ut lorem eu magna imperdiet sagittis.</p>
-                        </div>
-                        <div class="col-md-6 require">
-                            <span class="hit-number">3</span>
-                            <p>Ut porttitor, dui quis aliquam placerat, lacus diam viverra odio, et rutrum odio elit id lectus. Vivamus volutpat id dui a dictum. Ut maximus non enim ac luctus. </p>
-                        </div>
-                        
-                    </div>
-
-    			    <div role="tabpanel" class="tab-pane row" id="mutual">
+    			    <div role="tabpanel" class="tab-pane active row" id="mutual">
                         <div class="col-md-6 require">
                             <span class="hit-number">1</span>
                             <p>Praesent non augue eget mauris posuere consectetur nec et lorem. Fusce non porttitor sapien, et lobortis diam. Ut vel vehicula enim, eu tempus ligula. Duis laoreet id diam non molestie. Aliquam quis congue nulla.</p>
@@ -469,7 +540,7 @@ Template Name: Servicio Personas
                             <span class="hit-number">4</span>
                             <p>Dignissim nibh a, dictum nulla. Nulla leo arcu, lacinia tempor odio ut, tempus rhoncus tortor. Aenean ut ligula imperdiet.</p>
                         </div> 
-                    </div>
+              </div>
 
     			    <div role="tabpanel" class="tab-pane row" id="ccaf">
                         <div class="col-md-6 require">
@@ -484,7 +555,7 @@ Template Name: Servicio Personas
                             <span class="hit-number">3</span>
                             <p>Ut porttitor, dui quis aliquam placerat, lacus diam viverra odio, et rutrum odio elit id lectus. Vivamus volutpat id dui a dictum. Ut maximus non enim ac luctus. </p>
                         </div>
-                    </div>
+              </div>
 
     			</div>
 			</div>
@@ -504,32 +575,36 @@ Template Name: Servicio Personas
             <div class="col-md-12">
 
               <!-- Nav tabs -->
-              <div class="nav nav-tabs col-md-6 col-xs-12" role="tablist">
-                <figure role="presentation" class="active col-md-6 col-xs-6 col-esp">
+              <ul class="nav nav-tabs col-md-6 col-xs-12" role="tablist">
+                <li role="presentation" class="col-md-6 col-xs-6 col-esp active">
+                    
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/20.jpg" alt="" class="img-responsive">
-                    <figcaption>
+                    
                         <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Política y Seguridad Ocupacional</a>
-                    </figcaption>
-                </figure>
-                <figure role="presentation" class="col-md-6 col-xs-6 col-esp">
-                    <img src="<?php echo get_bloginfo('template_directory');?>/images/21.jpg" alt="" class="img-responsive">
-                    <figcaption>
-                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Políticas de Capacitación</a>
-                    </figcaption>
-                </figure>
-                <figure role="presentation" class="col-md-6 col-xs-6 col-esp">
+                    
+                    
+                </li>
+                <li role="presentation" class="col-md-6 col-xs-6 col-esp">
+                    
+                      <img src="<?php echo get_bloginfo('template_directory');?>/images/21.jpg" alt="" class="img-responsive">
+                      
+                          <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Políticas de Capacitación</a>
+                      
+                    
+                </li>
+                <li role="presentation" class="col-md-6 col-xs-6 col-esp">
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/22.jpg" alt="" class="img-responsive">
-                    <figcaption>
+                    
                         <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Reglamento Interno</a>
-                    </figcaption>
-                </figure>
-                <figure role="presentation" class="col-md-6 col-xs-6 col-esp">
+                    
+                </li>
+                <li role="presentation" class="col-md-6 col-xs-6 col-esp">
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/23.jpg" alt="" class="img-responsive">
-                    <figcaption>
+                    
                         <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Manual y Normas Específicas</a>
-                    </figcaption>
-                </figure>
-              </div>
+                    
+                </li>
+              </ul>
 
               <!-- Tab panes -->
               <div class="tab-content col-md-6 col-sm-6 col-xs-12">
@@ -600,8 +675,6 @@ Template Name: Servicio Personas
     </div>
 </section>
 
-<script>
-    $('#myModal').modal(options)
-</script>
+
 
 <?php get_footer('inside'); ?>

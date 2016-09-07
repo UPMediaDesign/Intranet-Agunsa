@@ -24,6 +24,7 @@ Template Name: Quienes Somos
     </div>
 </div>
 
+<?php /* ?>
 <!-- Search Sucursal -->
 <section class="search-area clr-bg06">
     <div class="container">
@@ -51,6 +52,31 @@ Template Name: Quienes Somos
                 </select>
 
             </div>
+        </div>
+    </div>
+</section>
+<?php */ ?>
+
+<!-- Initial Contact Search -->
+<section class="search-personal clr-bg06">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <h3>Busque a un contacto específico </h3>
+                <p>Solo necesita su nombre y podrá acceder a datos precisos como Sucursal, Anexo, Celular y Correo.</p>
+            </div>
+
+            <div class="col-md-8 col-sm-6 col-xs-12 search-personal">
+
+                <form method="get" id="searchform" action="<?php bloginfo('url')?>">
+                    <label class="hidden" for="s"></label>
+                    <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
+                    <input type="text" placeholder="Ingresa búsqueda" value="" name="s" id="s">
+                </form>
+
+            </div>
+
         </div>
     </div>
 </section>
@@ -130,7 +156,7 @@ Template Name: Quienes Somos
                     <p>Av. Andrés Bello 2687, Piso 15 Edificio del Pacífico</p>
                     <p>Email: <a href="mailto:agunsascl@agunsa.cl">agunsascl@agunsa.cl</a></p>
                     <div class="halfseparator"></div>
-                    <a href="" class="cta">Ir a Sucursal</a>
+                    <a href="http://intranetagunsa.upmedia.cl/sucursal/agunsa-coquimbo/" class="cta">Ir a Sucursal</a>
                 </figcaption>
             </figure>
 
@@ -211,31 +237,6 @@ Template Name: Quienes Somos
             </div> 
 
 <?php */ ?>
-
-        </div>
-    </div>
-</section>
-
-
-<!-- Initial Contact Search -->
-<section class="search-personal clr-bg06">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <h3>Busque a un contacto específico </h3>
-                <p>Solo necesita su nombre y podrá acceder a datos precisos como Sucursal, Anexo, Celular y Correo.</p>
-            </div>
-
-            <div class="col-md-8 col-sm-6 col-xs-12 search-personal">
-
-                <form method="get" id="searchform" action="<?php bloginfo('url')?>">
-                    <label class="hidden" for="s"></label>
-                    <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
-                    <input type="text" placeholder="Ingresa búsqueda" value="" name="s" id="s">
-                </form>
-
-            </div>
 
         </div>
     </div>

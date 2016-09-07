@@ -21,5 +21,5 @@
 		<a href="/" rel="nofollow" title="Leer más">Leer más »</a>
 	</article>
 	<div class="clear separator"></div>
-	<a href="<?php bloginfo('url')?>/category/noticias" class="cta" rel="Ir a Noticias">Ir a Noticias</a>
+	<a href="<?php bloginfo('url')?>/category/noticias" class="cta" rel="Volver a Noticias">Volver a Noticias</a>
 </aside>
