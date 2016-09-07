@@ -342,12 +342,12 @@ Template Name: Servicio Personas
 			<div class="col-md-12">
 				<h3>Actualizaciones y Solicitudes</h3>
 			</div>
-			<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12 cleared">
 				<h2>Datos Personales</h2>
 				<p>Curabitur quis viverra nisi. Pellentesque mauris quam, varius quis iaculis at, feugiat ut lacus. Fusce vel nibh elementum, porta neque vel, efficitur nunc. Mauris et nulla at quam tempor condimentum. </p>
 				<a href="" class="cta">Ver Formulario <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
 			</div>
-			<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12 cleared">
 				<h2>Emisión de Certificado</h2>
 				<p>Curabitur quis viverra nisi. Pellentesque mauris quam, varius quis iaculis at, feugiat ut lacus. Fusce vel nibh elementum, porta neque vel, efficitur nunc. Mauris et nulla at quam tempor condimentum. </p>
 				<a href="" class="cta">Ver Formulario <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
@@ -382,13 +382,13 @@ Template Name: Servicio Personas
 				<h3>Sueldos y Anticipos</h3>
 			</div>
 
-			<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12 cleared">
 				<h2>Liquidaciones de Sueldo</h2>
 				<p>Curabitur quis viverra nisi. Pellentesque mauris quam, varius quis iaculis at, feugiat ut lacus. Fusce vel nibh elementum, porta neque vel, efficitur nunc. Mauris et nulla at quam tempor condimentum. </p>
 				<a href="" class="cta">Ver Formulario <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
 			</div>
 
-			<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12 cleared">
 				<h2>Anticipos</h2>
 				<p>Curabitur quis viverra nisi. Pellentesque mauris quam, varius quis iaculis at, feugiat ut lacus. Fusce vel nibh elementum, porta neque vel, efficitur nunc. Mauris et nulla at quam tempor condimentum. </p>
 				<a href="#" data-toggle="modal" data-target="#modal-anticipos" class="cta">Ver Formulario <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
@@ -576,7 +576,7 @@ function enviaSolicitud() {
 
               <!-- Nav tabs -->
               <ul class="nav nav-tabs col-md-6 col-xs-12" role="tablist">
-                <li role="presentation" class="col-md-6 col-xs-6 col-esp active">
+                <li role="presentation" class="col-md-6 col-sm-6 col-xs-12 col-esp active">
                     
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/20.jpg" alt="" class="img-responsive">
                     
@@ -584,7 +584,7 @@ function enviaSolicitud() {
                     
                     
                 </li>
-                <li role="presentation" class="col-md-6 col-xs-6 col-esp">
+                <li role="presentation" class="col-md-6 col-sm-6 col-xs-12 col-esp">
                     
                       <img src="<?php echo get_bloginfo('template_directory');?>/images/21.jpg" alt="" class="img-responsive">
                       
@@ -592,13 +592,13 @@ function enviaSolicitud() {
                       
                     
                 </li>
-                <li role="presentation" class="col-md-6 col-xs-6 col-esp">
+                <li role="presentation" class="col-md-6 col-sm-6 col-xs-12 col-esp">
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/22.jpg" alt="" class="img-responsive">
                     
                         <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Reglamento Interno</a>
                     
                 </li>
-                <li role="presentation" class="col-md-6 col-xs-6 col-esp">
+                <li role="presentation" class="col-md-6 col-sm-6 col-xs-12 col-esp">
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/23.jpg" alt="" class="img-responsive">
                     
                         <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Manual y Normas Específicas</a>

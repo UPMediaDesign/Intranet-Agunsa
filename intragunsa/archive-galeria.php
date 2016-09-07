@@ -24,7 +24,7 @@
     <div class="container">
         <div class="row">
      
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/29.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -36,7 +36,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/30.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -48,7 +48,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/31.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -60,7 +60,7 @@
                 </figcaption>
             </figure>
             
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/32.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -72,7 +72,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/31.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -84,7 +84,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/29.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -96,7 +96,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/32.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -108,7 +108,7 @@
                 </figcaption>
             </figure>
             
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/30.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -120,7 +120,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/29.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -132,7 +132,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/30.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -144,7 +144,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/31.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>
@@ -156,7 +156,7 @@
                 </figcaption>
             </figure>
             
-            <figure class="col-md-3 col-sm-3 col-xs-12 col-esp">
+            <figure class="col-md-3 col-sm-3 col-xs-6 col-esp">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/32.jpg" class="img-responsive" alt="">
                 <figcaption class="view-normal">
                     <h2>Fiesta fin de año 2015 operadores portuarios </h2>

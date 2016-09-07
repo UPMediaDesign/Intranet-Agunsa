@@ -12,7 +12,7 @@
 				</address>
 			</div>
 
-			<div class="col-md-4 node row">
+			<div class="col-md-4 node">
 				<p>Agunsa Intranet</p>
 				<ul class="col-md-6 col-esp">
 					<li><a href="/" rel="nofollow" title="Inicio">Inicio</a></li>
@@ -26,7 +26,7 @@
 				</ul>
 			</div>
 
-			<div class="col-md-4 node row">
+			<div class="col-md-4 node">
 				<p>Ajustes Generales</p>
 				<ul class="col-md-7 col-esp">
 					<li><a href="/" rel="nofollow" title="Información">Información</a></li>
