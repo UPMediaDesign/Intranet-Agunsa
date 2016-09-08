@@ -645,6 +645,9 @@ span.phone{font-weight: 300; text-transform: uppercase; }
 /* Single Galeria */
 
 /* Footer*/
+
+/* Footer Interiores */
+
 }
 @media (max-width: 768px) and (orientation: portrait){
 /* Header */
@@ -670,6 +673,9 @@ span.phone{font-weight: 300; text-transform: uppercase; }
 /* Single Galeria */
 
 /* Footer*/
+
+/* Footer Interiores */
+
 }
 @media (max-width: 768px) and (orientation: landscape){
 /* Header */
@@ -695,6 +701,9 @@ span.phone{font-weight: 300; text-transform: uppercase; }
 /* Single Galeria */
 
 /* Footer*/
+
+/* Footer Interiores */
+
 }
 
 /* Landscape tablets and medium desktops */
@@ -723,11 +732,16 @@ span.phone{font-weight: 300; text-transform: uppercase; }
 
 /* Footer */
 
+/* Footer Interiores */
+
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px){
 /* Header */
+.navbar-right{margin-right: 15px;}
+
+.searchh {margin-top: 33px; margin-left: -15px; padding-left: 10px; margin-right: 20px; }
 
 /* Header Page */
 
@@ -738,12 +752,21 @@ span.phone{font-weight: 300; text-transform: uppercase; }
 /* Page Quienes Somos */
 
 /* Page Noticias */
+.secondary-news figure {margin-bottom: 30px; }
 
 /* Page Documentos */
+.form-control.country, .form-control.city, .form-control.type {width: 30.333333%; }
 
 /* Page Galería */
+.gallery-area figure {max-height: 228px; }
 
 /* Single Noticias */
+.single img {width: 100%; height: auto; }
+
+article h2 {margin-top: 15px; }
+article p {color: #8c8c8c; font-size: 14.5px; line-height: 1.7em; }
+
+.sidebar-news article { padding-bottom: 30px; }
 
 /* Single Sucursal */
 
@@ -751,10 +774,16 @@ span.phone{font-weight: 300; text-transform: uppercase; }
 
 /* Footer */
 
+/* Footer Interiores */
+
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px){
+/* Auxiliares */
+.desktop{display:none;}
+.mobile{display:block;}
+
 /* Header */
 
 /* Header Page */
@@ -779,16 +808,63 @@ span.phone{font-weight: 300; text-transform: uppercase; }
 
 /* Footer*/
 
+/* Footer Interiores */
+
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px){
+/* Auxiliares */
+.desktop{display:none;}
+.mobile{display:block;}
+
 /* Header */
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{max-height:550px;}
 .navbar{min-height:85px; margin-left: -15px; margin-right: -15px; padding-left: 15px;}
+
+button.navbar-toggle {top: 20px; right: 15px; background:#e21717; border-radius:50%;  padding: 11px 8px; }
+
+.navbar-nav{background:rgba(0,0,0,.5); margin-top: 30px;}
+.navbar-nav>li>a {padding-bottom: 15px; padding-top: 20px; }
+
+.home li.menu-item-home a, .home li.menu-item-home a:hover{background-position: 16.5px 25px !important; }
+.page li.menu-item-home a {background-position: 16.5px 25px !important; }
+
+.icon-bar {background-color: #fff;}
+
+.pull-right{display:none}
+
+/* Search Modal */
+.searchh.mobile.tablet {float: left; border: none; margin-top: 35px; padding-left: 10px; border-right: 1px solid #fff; padding-right: 15px;}
+.searchh .btn {font-size: 25px; padding: 0; }
+
+#bigSearch .modal-lg {margin-top: 140px; width: 95%;}
+.home #bigSearch .modal-content a, .page #bigSearch .modal-content a, .archive #bigSearch .modal-content a, .category .modal-content a, .search .modal-content a, .single .modal-content a { width: 9%; padding: 10px 5px; }
+.home #bigSearch.modal input, .page #bigSearch.modal input, .archive #bigSearch.modal input, .category #bigSearch.modal input, .search #bigSearch.modal input, .single #bigSearch.modal input {width: 85%; padding: 6px 15px; font-size: 25px; border-bottom: 1px solid #fff; }
+a.icon-search{font-size: 30px !important;}
+.modal-body button a {font-size: 14px !important; }
 
 /* Header Page */
 
 /* Header Single */
+
+/* Home */
+.jumbotron.base h2{font-size: 25px; letter-spacing: .6px; }
+.jumbotron p{font-size: 13px;}
+
+.control{font-size: 13px; top:350px;}
+.carousel-control{margin-left:10px;}
+
+.push-control{bottom: 15px;}
+.push-control img {width: 41px; height: 40px; padding: 5px 11px; }
+
+.push-footer #throw-up{bottom: 46px;}
+
+#throw-up figure {max-height: 89px; }
+#throw-up figcaption{bottom: 55px;}
+#throw-up h2{margin-top:10px; margin-bottom:5px;}
+#throw-up a{font-size: 14px; line-height: 1.3em; }
+#throw-up p{display: none;}
 
 /* Page Servicio Personas */
 .induction p {font-size: 16px; padding-top: 20px; }
@@ -848,7 +924,10 @@ span.hit-number {float: left; font-size: 15px; width: 25px; height: 26px; paddin
 
 .secondary-news figure{margin-bottom:15px;}
 
-/* Footer */
+/* Footer Home */
+.credits p{font-size: 13px;}
+
+/* Footer Interiores */
 .node{clear: both; padding-top: 20px; margin-top: 0; padding-bottom: 0px;} 
 .node ul{margin-bottom:0;}
 

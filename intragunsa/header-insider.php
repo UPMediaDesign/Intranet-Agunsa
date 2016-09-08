@@ -14,7 +14,7 @@
 <link rel="shortcut icon" href="<?php bloginfo('template_directory')?>/favicon.ico?ver=3.8.1">
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />2
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css?ver=3.8.1">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>?ver=3.8.1" />
@@ -81,12 +81,16 @@ jQuery(document).ready(function(){
     <div class="container">
         <div class="row">
 
-          <div class="navbar col-md-12 col-xs-12">
+          <div class="navbar col-md-12 col-sm-12">
 
               <div class="navbar-header">
                 <a class="navbar-brand" href="<?php bloginfo('url')?>" title="AGUNSA - Intranet" rel="nofollow">
                   <img src="<?php echo get_bloginfo('template_directory')?>/images/logo_red.png" alt="Logo AGUNSA Intranet" />
                 </a>
+
+                <div class="searchh mobile tablet">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="fa fa-search"></span></button>
+                </div>
 
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -98,7 +102,7 @@ jQuery(document).ready(function(){
 
               <div class="navbar-collapse collapse">
                   <!-- Búsqueda -->
-                  <div class="searchh">
+                  <div class="searchh desktop">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="fa fa-search"></span></button>
                   </div>
 
@@ -125,11 +129,16 @@ jQuery(document).ready(function(){
 <!-- Fin Push Navigation -->
 
 <nav class="push-nav">
+  <?php /* ?>
+    <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'list-unstyled main-menu' , 'theme_location' => 'primary' ) ); ?>
+  <?php */?>
+
   <ul id="menu-menu-principal-1" class="list-unstyled main-menu">
     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 induccion"><a href="/">Inducción</a></li>
     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17 liquidaciones"><a href="/">Liquidaciones de Sueldo</a></li>
     <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35 directorio"><a href="/">Directorio</a></li>
   </ul>
+
 </nav>
 
 <div class="modal fade bs-example-modal-lg" tabindex="-1" id="bigSearch" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -145,10 +154,10 @@ jQuery(document).ready(function(){
       <div class="modal-body">
         <form method="get" id="searchform" action="<?php bloginfo('url')?>">
           <label class="hidden" for="s"></label>
-          <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
+          <a class="icon-search" onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
           <input type="text" placeholder="¿Qué Buscas?" value="" name="s" id="s">
-          <button><a href="">Buscar Personas</a></button>
-          <button><a href="">Buscar Contenido</a></button>
+          <button><a href="">Personas</a></button>
+          <button><a href="">Contenidos</a></button>
         </form>
       </div>
 
